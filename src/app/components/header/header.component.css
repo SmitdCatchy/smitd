@@ -1,0 +1,82 @@
+#header{
+  position: fixed;
+  top: 0;
+  height: 80px;
+  line-height: 80px;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+  transition: height 0.5s;
+  z-index: 1000;
+  box-shadow: 0 0 10px 0 #000;
+}
+#header-small{
+  position: fixed;
+  top: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background-color: #000;
+  transition: height 0.5s;
+  z-index: 1000;
+  box-shadow: 0 0 10px 0 #000;
+}
+#header-resp{
+  position: fixed;
+  top: 0;
+  height: 40px;
+  line-height: 40px;
+  background-color: #000;
+  transition: height 0.5s;
+  z-index: 1000;
+  box-shadow: 0 0 10px 0 #000;
+}
+#header-width{
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+#header-resp #header-width{
+  margin-left: 50%;
+  -webkit-transform: translate(-120px);
+  -moz-transform: translate(-120px);
+  -ms-transform: translate(-120px);
+  transform: translate(-120px);
+}
+#header-image{
+  height: 80px;
+  width: 80px;
+  background-image: url("../../../media/images/smitd_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  transition: height 0.3s, width 0.3s, display 0.3s;
+  margin-right: 20px;
+}
+#header-image-wide{
+  height: 40px;
+  width: 240px;
+  background-image: url("../../../media/images/smitd_logo_text.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  transition: height 0.3s, width 0.3s, display 0.3s;
+}
+#header-image-portrait{
+  height: 40px;
+  width: 240px;
+  background-image: url("../../../media/images/smitd_logo_text.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#navigation{
+  float: right;
+}
+.disabled{
+  display:none;
+}

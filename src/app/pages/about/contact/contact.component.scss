@@ -1,0 +1,92 @@
+p{
+  margin: 0;
+}
+h3{
+  margin: 0;
+}
+a{
+  color: #FFF;
+}
+.contact-tab{
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color:  rgba(50,50,50,0.2);
+  border: 5px solid rgba(50,50,50,1);
+  transition: background-color 0.2s;
+
+  cursor: pointer;
+
+  height: 290px;
+  width: 200px;
+  margin: 20px 30px 30px 30px;
+  border-radius: 100px;
+
+  &:hover{
+    height: 310px;
+    width: 220px;
+    margin: 10px 20px 20px 20px;
+    border-radius: 120px;
+    background-color:  rgba(0,0,0,1);
+  }
+
+}
+.contact-tab-image{
+  width: inherit;
+  margin-bottom: -5px;
+}
+.contact-tab-image img{
+  background-color: #000;
+  min-height: 200px;
+  min-width: 200px;
+  width: inherit;
+  transition: display 0.5s;
+  margin-left: -5px;
+  margin-top: -5px;
+  border: 5px solid rgba(50,50,50,1);
+  border-radius: 100px;
+}
+.contact-tab:hover .contact-tab-image img{
+  border-radius: 120px;
+    min-height: 220px;
+    min-width: 220px;
+}
+.contact-tab-image img:last-child{display:none}
+.contact-tab:hover .contact-tab-image img:first-child{display:none}
+.contact-tab:hover .contact-tab-image img:last-child{display:inline-block}
+
+.contact-tab-med-image img:last-child{display:none}
+.contact-tab-med:hover .contact-tab-image img:first-child{display:none}
+.contact-tab-med:hover .contact-tab-image img:last-child{display:inline-block}
+
+.contact-tab-min-image img:last-child{display:none}
+.contact-tab-min:hover .contact-tab-image img:first-child{display:none}
+.contact-tab-min:hover .contact-tab-image img:last-child{display:inline-block}
+
+.contact-tab-res-image img:last-child{display:none}
+.contact-tab-res:hover .contact-tab-image img:first-child{display:none}
+.contact-tab-res:hover .contact-tab-image img:last-child{display:inline-block}
+
+.contact-tab-name{
+  font-family: CGB;
+  text-transform: uppercase;
+  // border-top: 2px solid rgba(100,100,100,1);
+  padding: 5px;
+  transition: font-size 0.2s;
+}
+
+.contact-tab:hover .contact-tab-name{font-size: 22px;}
+.contact-tab-med:hover .contact-tab-name{font-size: 22px;}
+.contact-tab-min:hover .contact-tab-name{font-size: 22px;}
+.contact-tab-res:hover .contact-tab-name{font-size: 22px;}
+.contact-tab-position{
+  color: rgba(100,100,100,1);
+  font-family: CGB;
+  text-transform: capitalize;
+  transition: color 0.52s;
+  font-size: 15px;
+}
+.contact-tab:hover .contact-tab-position{color: #FFF}
+.contact-tab-med:hover .contact-tab-position{color: #FFF}
+.contact-tab-min:hover .contact-tab-position{color: #FFF}
+.contact-tab-res:hover .contact-tab-position{color: #FFF}

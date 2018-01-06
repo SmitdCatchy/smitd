@@ -1,0 +1,27 @@
+<div *ngIf="about.isroot;then root else link">here is ignored</div>
+
+<ng-template #root>
+  <a routerLink="{{about.link}}">
+    <div class="contact-tab">
+      <div class="contact-tab-image">
+        <img src={{about.pas}}>
+        <img src={{about.act}}>
+      </div>
+      <h3 class="contact-tab-name">{{about.name}}</h3>
+      <p class="contact-tab-position">{{about.pos}}</p>
+    </div>
+  </a>
+</ng-template>
+
+<ng-template #link>
+  <a href="{{about.link}}" target="_blank">
+    <div class="contact-tab">
+      <div class="contact-tab-image">
+        <img src={{about.pas}}>
+        <img src={{about.act}}>
+      </div>
+      <h3 class="contact-tab-name">{{about.name}}</h3>
+      <p class="contact-tab-position">{{about.pos}}</p>
+    </div>
+  </a>
+</ng-template>

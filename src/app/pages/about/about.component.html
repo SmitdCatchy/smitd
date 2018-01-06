@@ -1,0 +1,11 @@
+<div id="about" [style.width.px]="container_width" [style.min-height.px]="container_min_height">
+  <h1>A csapat</h1>
+
+  <div class="capsules">
+    <app-contact *ngFor ="let about of abouts" [about]="about"></app-contact>
+  </div>
+  <h1>Kapcsolataink</h1>
+  <div class="capsules">
+    <app-contact *ngFor ="let collab of collabs" [about]="collab"></app-contact>
+  </div>
+</div>
